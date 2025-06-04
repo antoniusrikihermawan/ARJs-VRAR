@@ -61,13 +61,25 @@
         <a-entity
           id="sun"
           gltf-model="./assets/3d/sun.glb"
-          scale="0.20 0.20 0.20"
+          scale="0.120 0.120 0.120"
           position="0 0 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+        ></a-entity>
+
+        <!-- Grup rotasi Venus -->
+        <a-entity
+          id="venus-orbit-group"
+          position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 12000"
         >
+          <a-entity
+            gltf-model="./assets/3d/venus.glb"
+            scale="0.9 0.9 0.9"
+            position="1.5 0 0"
+          ></a-entity>
         </a-entity>
 
-        <!-- Grup rotasi bumi -->
+        <!-- Grup rotasi Bumi -->
         <a-entity
           id="earth-orbit-group"
           position="0 0 0"
@@ -75,10 +87,9 @@
         >
           <a-entity
             gltf-model="./assets/3d/earth.glb"
-            scale="1 1 1"
-            position="2 0 0"
-          >
-          </a-entity>
+            scale="0.8 0.8 0.8"
+            position="2.5 0 0"
+          ></a-entity>
         </a-entity>
 
         <!-- Suara -->
